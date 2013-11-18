@@ -46,11 +46,14 @@ class Customer
     string name;
     float price;
   };
+  const int DESPAIR;
+  const int NIRVANA;
   private:
     string m_cName;
     float m_cash;
-    string m_purchases[MAX_P];
+    product m_purchases[MAX_P];
     short m_numPurch;
+    int happiness;
   public:
     Customer(string &name, const float money):m_cName(name),m_cash(money),
       m_numPurch(0){};
