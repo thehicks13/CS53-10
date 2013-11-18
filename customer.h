@@ -54,6 +54,7 @@ class Customer
     product m_purchases[MAX_P];
     short m_numPurch;
     int happiness;
+    bool inclination;
   public:
     Customer(string &name, const float money):m_cName(name),m_cash(money),
       m_numPurch(0){};
