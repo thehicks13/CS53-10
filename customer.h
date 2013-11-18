@@ -41,6 +41,11 @@ POST: returns nothing, but prints to the screen
 
 class Customer
 {
+  struct product
+  {
+    string name;
+    float price;
+  };
   private:
     string m_cName;
     float m_cash;
