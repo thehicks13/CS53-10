@@ -7,6 +7,13 @@
 
 #include "customer.h"
 
+Customer(string &name, const float money)
+{
+   Customer.cname = name;
+   Customer.cash = money;
+   Customer.happiness = rand() % NIRVANA + 1;
+}
+
 bool Customer::purchase(string item)
 {
   bool pSuccess=false;
