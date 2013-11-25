@@ -7,11 +7,17 @@
 
 #include "customer.h"
 
-Customer(string &name, const float money)
+Customer(string &name, const int money)
 {
    Customer.cname = name;
    Customer.cash = money;
-   Customer.happiness = rand() % NIRVANA + 1;
+}
+
+Customer()
+{
+   m_cName = "";
+   m_cash = rand()%(250-4)+4;
+   m_happiness = rand()%NIRVANA + 1;
 }
 
 bool Customer::purchase(string item)
