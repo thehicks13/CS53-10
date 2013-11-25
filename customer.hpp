@@ -18,6 +18,7 @@ bool Customer::buy_something(T& cust, const T& Corp)
 {
   bool pSuccess=false;
   int chancetoPurchase;
+  int product;
   
   if(m_numPurch < 20)
   {
@@ -27,7 +28,8 @@ bool Customer::buy_something(T& cust, const T& Corp)
       if(m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
       {
          m_numPurch++;
-         m_purchases[m_numPurch]=item;
+         product = rand()%corp.m_nummurch;
+         m_purchases[m_numPurch]=product;
          pSuccess=true;
       }
     }
