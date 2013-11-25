@@ -20,15 +20,15 @@ bool Customer::buy_something(T& cust, const T& Corp)
   int chancetoPurchase;
   int product;
   
-  if(m_numPurch < 20)
+  if(cust.m_numPurch < 20)
   {
     chancetoPurchase = rand()%2;
     if(chancetoPurchase == 1)
     { 
-      if(m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
+      if(cust.m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
       {
-         m_numPurch++;
-         product = rand()%corp.m_nummerch;
+         cust.m_numPurch++;
+         product = rand()%corp.m_numMerch;
          m_purchases[m_numPurch]=m_merch[product];
          pSuccess=true;
       }
