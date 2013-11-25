@@ -9,7 +9,6 @@
 
 Customer()
 {
-   m_cName = "";
    m_cash = rand()%(250-4)+4;
    m_happiness = rand()%NIRVANA + 1;
 }
