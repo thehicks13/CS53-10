@@ -13,7 +13,8 @@ Customer()
    m_happiness = rand()%NIRVANA + 1;
 }
 
-bool Customer::purchase(string item)
+template <typename T>
+bool Customer::buy_something(T% cust, const T& Corp)
 {
   bool pSuccess=false;
   if(m_numPurch < 20)
