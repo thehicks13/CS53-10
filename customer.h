@@ -39,6 +39,12 @@ PRE:  none
 POST: returns nothing, but prints to the screen
 */
 
+struct product
+{
+  string name;
+  float price;
+};
+
 class Customer
 {
   const int DESPAIR;
