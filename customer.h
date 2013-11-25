@@ -14,7 +14,9 @@
 using namespace std;
 
 const int MAX_P = 20;
-
+const int DESPAIR = 0;
+const int NIRVANA = 100;
+const int MAX_CASH = 101;
 /*
 ~~purchase()~~
 DESC: adds an item to a customer's purchases if they have room for it
@@ -47,8 +49,6 @@ struct product
 
 class Customer
 {
-  const int DESPAIR;
-  const int NIRVANA;
   private:
     string m_cName;
     float m_cash;
@@ -57,7 +57,7 @@ class Customer
     int happiness;
     bool inclination;
   public:
-    Customer(string &name, const float money);
+    Customer(string &name);
     Customer():m_cName(""),m_cash(rand()%(250-4)+4)
       {for(int i=0;i<MAX_P;i++) m_purchases[i].clear();};
     bool purchase(string item);
