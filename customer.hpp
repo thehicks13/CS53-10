@@ -17,12 +17,14 @@ template <typename T>
 bool Customer::buy_something(T& cust, const T& Corp)
 {
   bool pSuccess=false;
+  int chancetoPurchase;
+  
   if(m_numPurch < 20)
   {
     chancetoPurchase = rand()%2;
     if(chancetoPurchase == 1)
     { 
-      if(m_cash > aaaaaaaaaaaaaaaaaaaaaaaaa)
+      if(m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
       {
          m_numPurch++;
          m_purchases[m_numPurch]=item;
