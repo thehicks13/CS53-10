@@ -54,8 +54,8 @@ class Customer
     float m_cash;
     product m_purchases[MAX_P];
     short m_numPurch;
-    int happiness;
-    bool inclination;
+    int m_happiness;
+    bool m_inclination;
   public:
     Customer(string &name, const int money);
     Customer():m_cName(""),m_cash(rand()%(250-4)+4)
