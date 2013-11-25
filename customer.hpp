@@ -19,9 +19,16 @@ bool Customer::buy_something(T& cust, const T& Corp)
   bool pSuccess=false;
   if(m_numPurch < 20)
   {
-    m_numPurch++;
-    m_purchases[m_numPurch]=item;
-    pSuccess=true;
+    chancetoPurchase = rand()%2;
+    if(chancetoPurchase == 1)
+    { 
+      if(m_cash > aaaaaaaaaaaaaaaaaaaaaaaaa)
+      {
+         m_numPurch++;
+         m_purchases[m_numPurch]=item;
+         pSuccess=true;
+      }
+    }
   }
   return pSuccess;
 }
