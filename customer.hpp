@@ -28,8 +28,8 @@ bool Customer::buy_something(T& cust, const T& Corp)
       if(cust.m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
       {
          cust.m_numPurch++;
-         product = rand()%corp.m_numMerch;
-         m_purchases[m_numPurch]=m_merch[product];
+         product = rand()%Corp.m_numMerch;
+         cust.m_purchases[cust.m_numPurch]=Corp.m_merch[product];
          pSuccess=true;
       }
     }
