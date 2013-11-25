@@ -57,7 +57,6 @@ class Customer
     int m_happiness;
     bool m_inclination;
   public:
-    Customer(string &name, const int money);
     Customer():m_cName(""),m_cash(rand()%(250-4)+4)
       {for(int i=0;i<MAX_P;i++) m_purchases[i].clear();};
     bool purchase(string item);
