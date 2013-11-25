@@ -7,12 +7,6 @@
 
 #include "customer.h"
 
-Customer(string &name, const int money)
-{
-   Customer.cname = name;
-   Customer.cash = money;
-}
-
 Customer()
 {
    m_cName = "";
