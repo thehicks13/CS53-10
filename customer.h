@@ -41,11 +41,6 @@ POST: returns nothing, but prints to the screen
 
 class Customer
 {
-  struct product
-  {
-    string name;
-    float price;
-  };
   const int DESPAIR;
   const int NIRVANA;
   private:
