@@ -13,11 +13,10 @@ using namespace std;
 int main()
 {
   srand(time(NULL));
-  string name1 = "Michael";
-  string name2 = "Emma";
-  string name3 = "Aaron";
-  string bname1 = "Tyler's 5 & Dime";
-
+  Business Moes;
+  Business Comics;
+  Customer patrons[20];
+  patrons.set_names();
   Customer SusanD(name1,SusanD.getMoney());
   Customer TuckerW(name2,TuckerW.getMoney());
   Customer AaronR(name3,AaronR.getMoney());
