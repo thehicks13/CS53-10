@@ -54,7 +54,8 @@ POST: returns nothing, but adds money to the business and takes it from a
       Business():m_bName(""),m_money(0),m_numMerch(0),m_numPeople(0){};
       void print();
       void addCustomer(Customer person);
-      void make_a_sale();
+      void sell_stuff();
+      void customers_leave();
       float getMoney(){return m_money;}
   };
 
