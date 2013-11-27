@@ -64,8 +64,11 @@ void Business::sell_stuff()
 
 //////////////////////////////
 
-void customers_leave(Customer people, const int num_cust)
+void Business::customers_leave(Customer citizens, const int num_cust)
 {
-   
-}
+  for(int i = 0; i < num_cust; i++)
+  {
+     citizens[i] = m_people[i];
+     m_people[i] = "";
+  }
 }
