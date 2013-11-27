@@ -30,7 +30,7 @@ bool Customer::buy_something(T& cust, const T& Corp)
          product = rand()%Corp.m_numMerch;
          cust.m_purchases[cust.m_numPurch]=Corp.m_merch[product];
          cust.m_cash = cust.m_cash - aaaaaaaaaaaaaaaaaaa;
-         cust.m_happiness = cust.m_happiness + 15;
+         cust.m_happiness = cust.m_happiness + 25;
          Corp.m_money = Corp.m_money + aaaaaaaaaaaaaaaaaa;
          cust.m_numPurch++;
          pSuccess=true;
