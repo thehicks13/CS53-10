@@ -19,62 +19,38 @@ void Business::stock()
     m_numMerch++;
     getline(fin,m_merch[i],'\n');
     i++;
-  }
+    }
     fin.close();
     return;
-}
-
-//////////////////////
-
-void Business::print()
-{
-  string name;
-  cout<<m_bName<<" has these items for sale:\n";
-  for(int x=0;x<=m_numMerch;x++)
-  cout<<'\t'<<m_merch[x]<<endl;
-  cout<<"The customers of "<<m_bName<<" are:";
-  for(int p=0;p<=m_numPeople;p++)
-  {
-    name=m_people[p].getName();
-    cout<<'\t'<<name<<endl;
   }
-  return;
-}
 
-////////////////////////
-
-void Business::addCustomer(Customer person)
-{
-  m_numPeople++;
-  m_people[m_numPeople]=person;
-  return;
-}
-
-////////////////////////
-
-void Business::sell_stuff()
-{
-  float cMoney;
-  bool bought = false;
-  int itemNum = rand()%(m_numMerch-1)+1;
-  string item = m_merch[itemNum];
-  for(int f=0;f<=m_numPeople;f++)
+  void Business::print()
   {
-    bought=m_people[f].purchase(item);
-    if(bought)
+    string name;
+    cout<<m_bName<<" has these items for sale:\n";
+    for(int x=0;x<=m_numMerch;x++)
+    cout<<'\t'<<m_merch[x]<<endl;
+    cout<<"The customers of "<<m_bName<<" are:";
+    for(int p=0;p<=m_numPeople;p++)
     {
-      cMoney=m_people[f].getMoney();
-      cMoney-=40;
-      m_people[f].setMoney(cMoney);
-      m_money+=40;
+      name=m_people[p].getName();
+      cout<<'\t'<<name<<endl;
     }
+    return;
   }
-  return;
-}
 
-////////////////////////
+  void Business::addCustomer(Customer person)
+  {
+    m_numPeople++;
+    m_people[m_numPeople]=person;
+    return;
+  }
 
-void customers_leave(const cust.m_people, int num_people)
-{
-  
-}
+  void Business::sell_stuff()
+  {
+    for(int i = 0; i < m_numPeople; i++)
+    {
+      buy_something(); 
+    }
+    return;
+  }
