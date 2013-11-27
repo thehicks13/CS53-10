@@ -52,7 +52,7 @@ void throw()
 
 ////////////////////////
 
-void Customer::print()
+ostream& operator <<(ostream& os, const Customer cust)
 {
   cout<<m_cName<<" has $"<<m_cash<<" and purchases ";
   for(int j=0;j<=m_numPurch;j++)
@@ -64,3 +64,4 @@ void Customer::print()
   }
   return;
 }
+
