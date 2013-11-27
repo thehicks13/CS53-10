@@ -59,7 +59,7 @@ class Customer
   public:
     Customer();
     template <typename T>
-    bool buy_something(T& cust, const T& Corp);
+    bool buy_something(const T& Corp);
     void throw();
     void rob();
     friend ostream& operator <<(ostream& os, const Customer cust);
