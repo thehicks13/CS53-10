@@ -71,3 +71,10 @@ void Business::sell_stuff()
   }
   return;
 }
+
+////////////////////////
+
+void customers_leave(const cust.m_people, int num_people)
+{
+  
+}
