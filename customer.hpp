@@ -19,6 +19,15 @@ Customer::void set_names()
 {
   istream in;
   in.open("people.txt");
+  /*
+  vari = rand()%in_size + 1;
+  do
+  {
+    in.getline(randname, 20)
+    strcpy(custname, randname)
+    j++
+  }while(j< vari)
+  */
   for(int i = 0; i < NUM_CUST; i++)
   {
      in >> m_cname[i];
