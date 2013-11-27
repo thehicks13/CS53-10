@@ -13,6 +13,8 @@ Customer()
    m_happiness = rand()%NIRVANA + 1;
 }
 
+/////////////////////////
+
 template <typename T>
 bool Customer::buy_something(T& cust, const T& Corp)
 {
@@ -40,6 +42,15 @@ bool Customer::buy_something(T& cust, const T& Corp)
   cust.m_happiness = cust.m_happiness - 10;
   return pSuccess;
 }
+
+////////////////////////
+
+void throw()
+{
+   
+}
+
+////////////////////////
 
 void Customer::print()
 {
