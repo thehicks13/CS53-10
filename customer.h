@@ -60,6 +60,8 @@ class Customer
     Customer();
     template <typename T>
     bool buy_something(T& cust, const T& Corp);
+    void throw();
+    void rob();
     string getName(){return m_cName;}
     float getMoney(){return m_cash;}
     void setMoney(const float cash){m_cash=cash; return;}
