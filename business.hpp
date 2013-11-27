@@ -52,7 +52,7 @@ void Business::addCustomer(Customer person)
 
 ////////////////////////
 
-void Business::make_a_sale()
+void Business::sell_stuff()
 {
   float cMoney;
   bool bought = false;
