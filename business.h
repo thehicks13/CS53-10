@@ -45,9 +45,9 @@ POST: returns nothing, but adds money to the business and takes it from a
       float m_money;
       short m_numMerch;
       short m_numPeople;
-      string m_merch[10];
-    Customer m_people[10];
-      public:
+      product m_merch[10];
+      Customer m_people[10];
+    public:
       void stock();
       Business(string &name, const float money):m_bName(name),
       m_money(money),m_numPeople(0){stock();};
