@@ -54,13 +54,13 @@ void throw()
 
 ostream& operator <<(ostream& os, const Customer cust)
 {
-  cout<<m_cName<<" has $"<<m_cash<<" and purchases ";
+  os<<m_cName<<" has $"<<m_cash<<" and purchases ";
   for(int j=0;j<=m_numPurch;j++)
   {
     if(j==m_numPurch)
-      cout<<m_purchases[j]<<"."<<endl;
+      os<<m_purchases[j]<<"."<<endl;
     else
-      cout<<m_purchases[j]<<", ";
+      os<<m_purchases[j]<<", ";
   }
   return;
 }
