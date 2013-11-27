@@ -1,0 +1,7 @@
+4.00   beer
+10.00  barstool
+6.00   shot of whiskey
+100.00 complete floor
+0.10   peanut
+1.00   pickled egg
+20.00  dartgun
