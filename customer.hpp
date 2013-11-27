@@ -16,30 +16,30 @@ Customer()
 /////////////////////////
 
 template <typename T>
-bool Customer::buy_something(T& cust, const T& Corp)
+bool Customer::buy_something(const T& Corp)
 {
   bool pSuccess=false;
   int chancetoPurchase;
   int product;
   
-  if(cust.m_numPurch < 20)
+  if(m_numPurch < 20)
   {
     chancetoPurchase = rand()%2;
     if(chancetoPurchase == 1)
     { 
-      if(cust.m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
+      if(m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
       {
          product = rand()%Corp.m_numMerch;
-         cust.m_purchases[cust.m_numPurch]=Corp.m_merch[product];
-         cust.m_cash = cust.m_cash - aaaaaaaaaaaaaaaaaaa;
-         cust.m_happiness = cust.m_happiness + 25;
+         m_purchases[cust.m_numPurch]=Corp.m_merch[product];
+         m_cash = m_cash - aaaaaaaaaaaaaaaaaaa;
+         m_happiness = mhappiness + 25;
          Corp.m_money = Corp.m_money + aaaaaaaaaaaaaaaaaa;
-         cust.m_numPurch++;
+         m_numPurch++;
          pSuccess=true;
       }
     }
   }
-  cust.m_happiness = cust.m_happiness - 10;
+  m_happiness = m_happiness - 10;
   return pSuccess;
 }
 
