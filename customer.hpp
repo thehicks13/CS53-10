@@ -22,7 +22,7 @@ Customer::void set_names()
   for(int i = 0; i < NUM_CUST; i++)
   {
      in >> m_cname[i];
-     in >> peoples[i].m_inclination;
+     in >> m_inclination[i];
   }
 }
 
