@@ -57,6 +57,8 @@ void Business::sell_stuff()
   for(int i = 0; i < m_numPeople; i++)
   {
     m_people[i].buy_something(*this); 
+    m_people[i].m_cash -= aaaaaaaaaaaaaaaaaaa;
+    m_money += aaaaaaaaaaaaaaaaaaaaaaa;
   }
   return;
 }
