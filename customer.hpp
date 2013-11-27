@@ -15,6 +15,19 @@ Customer()
 
 /////////////////////////
 
+Customer::void set_names()
+{
+  istream in;
+  in.open("people.txt");
+  for(int i = 0; i < NUM_CUST; i++)
+  {
+     in >> m_cname[i];
+     in >> peoples[i].m_inclination;
+  }
+}
+
+////////////////////////
+
 template <typename T>
 bool Customer::buy_something(const T& Corp)
 {
