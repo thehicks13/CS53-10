@@ -17,6 +17,7 @@ const int MAX_P = 20;
 const int DESPAIR = 0;
 const int NIRVANA = 100;
 const int MAX_CASH = 101;
+const int NUM_CUST = 20;
 /*
 ~~purchase()~~
 DESC: adds an item to a customer's purchases if they have room for it
