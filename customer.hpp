@@ -79,3 +79,9 @@ ostream& operator <<(ostream& os, const Customer cust)
   return;
 }
 
+/////////////////////////
+void customer::get_incline
+{
+   return m_inclination;
+}
+
