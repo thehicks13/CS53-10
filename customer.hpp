@@ -23,7 +23,7 @@ Customer::void set_names()
   {
      in >> m_cname[i];
   }
-  in.close("people.txt");
+  in.close;
   return;
 }
 
