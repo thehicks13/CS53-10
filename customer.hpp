@@ -22,6 +22,7 @@ Customer::void set_names()
   for(int i = 0; i < NUM_CUST; i++)
   {
      in >> m_cname[i];
+     in >> m_inclination[i];
   }
   in.close();
   return;
