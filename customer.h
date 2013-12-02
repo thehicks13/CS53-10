@@ -62,8 +62,8 @@ class Customer
     void set_name(Customer peoples);
     template <typename T>
     bool buy_something(const T& Corp);
-    void throw();
-    void rob();
+    void throwItem();
+    void rob(customer cust, int perp);
     friend ostream& operator <<(ostream& os, const Customer cust);
     string getName(){return m_cName;}
     float getMoney(){return m_cash;}
