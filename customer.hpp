@@ -95,7 +95,7 @@ void rob(customer cust, int robber, int victim)
 
 void throwItem(customer cust, int perp, int victim)
 {
-   if(cust[perp].numPurch > 0)
+   if(cust[perp].numPurch > 0 && cust[perp].inclination != cust[victim].inclination)
    {
      cust[perp].m_purchases[m_numPurch] = " ";
      cust[perp].m_numPurch --;
