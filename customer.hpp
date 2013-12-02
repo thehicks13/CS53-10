@@ -61,26 +61,27 @@ bool Customer::buy_something(const T& Corp)
 
 void action(customer cust, int perp)
 {
-   rob(cust, perp);
-   throwItem()
-}
-//////////////////////////
-
-void rob(customer cust, int robber)
-{
    int victim;
    int stolenItem;
    
    victim = rand()%m_numPeople;
+   rob(cust, perp, victim);
+   throwItem(cust, perp, victim);
+   return;
+}
+//////////////////////////
+
+void rob(customer cust, int robber, int victim)
+{
    stolenItem = rand()%victiim.m_numPurch;
    if(cust[robber].inclination == cust[victim].inclination && cust[vicitm].m_numPurch > 0
       && cust[robber].m_numPurch < MAX_P)
    {
      cust[robber].m_happiness += 25;
      cust[victim].m_happiness -= 20;
-     cust[robber].m_numPurch[numPurch + 1] = cust[victim].m_numPurch[stolenItem];
-     cust[victim].m_numPurch[stolenItem] = " ";
-     cust[victim].m_numPurch -- 1;
+     cust[robber].m_purchases[numPurch + 1] = cust[victim].m_purchases[stolenItem];
+     cust[victim].m_purchases[stolenItem] = " ";
+     cust[victim].m_numPurch --;
    }
    
    else if(cust[robber].inclination == cust[victim].inclination)
@@ -91,6 +92,24 @@ void rob(customer cust, int robber)
 }
 
 ////////////////////////
+
+void throwItem(customer cust, int perp, int victim)
+{
+   if(cust[perp].numPurch > 0)
+   {
+     cust[perp].m_purchases[m_numPurch] = " ";
+     cust[perp].m_numPurch --;
+     cust[victim].happiness -= 20;
+     cust[perp].happiness += 5;
+   }
+   else
+   {
+      cust[perp].happiness -= 25;
+   }
+   return;
+}
+
+/////////////////////////
 
 ostream& operator <<(ostream& os, const Customer cust)
 {
