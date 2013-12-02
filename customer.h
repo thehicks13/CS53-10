@@ -63,6 +63,7 @@ class Customer
     template <typename T>
     bool buy_something(const T& Corp);
     void throwItem(customer cust, int perp, int victim);
+    void shelbyville();
     void rob(customer cust, int perp);
     void action(customer cust, int perp, int victim);
     friend ostream& operator <<(ostream& os, const Customer cust);
