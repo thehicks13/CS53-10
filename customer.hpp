@@ -130,3 +130,12 @@ int Customer::get_incline()
    return m_inclination;
 }
 
+////////////////////////
+void shelbyville()
+{
+   m_cname = "";
+   m_numPurch = 0;
+   m_happiness = 0;
+   m_inclination = -1;
+   return;
+}
