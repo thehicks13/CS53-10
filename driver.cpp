@@ -15,23 +15,34 @@ int main()
   srand(time(NULL));
   Business Moes;
   Business Comics;
-  Customer patrons[20];
+  Customer patrons[NUM_CUST];
   patrons.set_names();
-  Customer SusanD(name1,SusanD.getMoney());
-  Customer TuckerW(name2,TuckerW.getMoney());
-  Customer AaronR(name3,AaronR.getMoney());
-
-  Business BigBadCars(bname1,BigBadCars.getMoney());
-
-  BigBadCars.addCustomer(SusanD);
-  BigBadCars.addCustomer(TuckerW);
-  BigBadCars.addCustomer(AaronR);
-
-  BigBadCars.make_a_sale();
-  BigBadCars.make_a_sale();
-  BigBadCars.make_a_sale();
-
-  BigBadCars.print();
-
+  for(int i = 0; i <NUM_CUST; i++)
+  {
+    if(patron[i].inclination == 0)
+      Moes.addCustomer();
+    else
+      Comics.addCustomer();
+  }
+  Moes.sell_stuff();
+  Comics.sell_stuff();
+  for(int i = 0; i < NUM_CUST; i++)
+  {
+    int switcheroo = rand()%NUM_CUST;
+    customer temp = patrons[i];
+    patrons[i] = patrons[switcheroo];
+    patrons[switcheroo] = temp;
+  }
+  for(int i = 0; i < NUM_CUST; i++)
+  {
+    customer.action(patrons, i);
+  }
+  for(int i = 0; i < NUM_CUST; i++)
+  {
+    if(patron[i] > 90 || patron[i] < 10)
+    {
+      patron[i].Shelbyville();
+    }
+  }
   return 0;
 }
