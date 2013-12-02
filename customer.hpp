@@ -59,9 +59,35 @@ bool Customer::buy_something(const T& Corp)
 
 ////////////////////////
 
-void throw()
+void action(customer cust, int perp)
 {
+   rob(cust, perp);
+   throwItem()
+}
+//////////////////////////
+
+void rob(customer cust, int robber)
+{
+   int victim;
+   int stolenItem;
    
+   victim = rand()%m_numPeople;
+   stolenItem = rand()%victiim.m_numPurch;
+   if(cust[robber].inclination == cust[victim].inclination && cust[vicitm].m_numPurch > 0
+      && cust[robber].m_numPurch < MAX_P)
+   {
+     cust[robber].m_happiness += 25;
+     cust[victim].m_happiness -= 20;
+     cust[robber].m_numPurch[numPurch + 1] = cust[victim].m_numPurch[stolenItem];
+     cust[victim].m_numPurch[stolenItem] = " ";
+     cust[victim].m_numPurch -- 1;
+   }
+   
+   else if(cust[robber].inclination == cust[victim].inclination)
+   {
+      cust[robber].happiness -= 5;
+   }
+   return;
 }
 
 ////////////////////////
