@@ -17,33 +17,47 @@ int main()
   Business Comics;
   Customer patrons[NUM_CUST];
   int num_cust = NUM_CUST;
+  int cycles = 0;
+  int Moes_happiness = 0;
+  int Comics_happiness = 0;
   patrons.set_names();
-  for(int i = 0; i <num_cust; i++)
-  {
-    if(patron[i].inclination == 0)
-      Moes.addCustomer();
-    else
-      Comics.addCustomer();
-  }
-  Moes.sell_stuff();
-  Comics.sell_stuff();
-  for(int i = 0; i < num_cust; i++)
-  {
-    int switcheroo = rand()%NUM_CUST;
-    customer temp = patrons[i];
-    patrons[i] = patrons[switcheroo];
-    patrons[switcheroo] = temp;
-  }
-  for(int i = 0; i < num_cust; i++)
-  {
-    customer.action(patrons, i);
-  }
-  for(int i = 0; i < num_cust; i++)
-  {
-    if(patron[i] > 90 || patron[i] < 10)
+  do{
+    for(int i = 0; i <num_cust; i++)
     {
-      patron[i].Shelbyville(patrons);
+      if(patron[i].inclination == 0)
+        Moes.addCustomer();
+      else if(patron[i].inclination == 1)
+        Comics.addCustomer();
     }
+    Moes.sell_stuff();
+    Comics.sell_stuff();
+    for(int i = 0; i < num_cust; i++)
+    {
+      int switcheroo = rand()%NUM_CUST;
+      customer temp = patrons[i];
+      patrons[i] = patrons[switcheroo];
+      patrons[switcheroo] = temp;
+    }
+    for(int i = 0; i < num_cust; i++)
+    {
+      customer.action(patrons, i);
+    }
+    for(int i = 0; i < num_cust; i++)
+    {
+      if(patron[i] > 90 || patron[i] < 10)
+      {
+        patron[i].Shelbyville(patrons);
+      }
+    }
+    cycles++;
+  }while(num_cust >= 1 || cycles = 20);
+  for(int i = 0; i < NUM_CUST; i++)
+  {
+    int store = patrons[i].getline();
+    if(store = 0)
+      Moes_happiness += patrons[i].m_happiness;
+    else if(store = 1)
+      Comics_happiness += patons[i].m_happiness;
   }
   return 0;
 }
