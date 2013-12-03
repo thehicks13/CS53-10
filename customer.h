@@ -34,8 +34,34 @@ Post: If the customer was able to buy something it's happiness went up,
 ~~void throwItem(customer cust, int perp, int victim)~~
 Desc: A random custromer throws an item at another customer if the customer is 
       a different store
-Pre: 
-Post: 
+Pre: Inclination has to have been intialized
+Post: The perps happiness goes up by 5, the victim's happiness goes down by 25
+
+~~ void rob(customer cust, int robber, int victim)~~
+Dec: A random customer tries to steal an item from another customer.
+Pre: Inclination has to have been initalized
+Post: If the robber succeded, his/ her happiness goes up by 25 & the victim's
+      goes down by 20. If the robber failed, his/ her happiness goes down by 5
+
+~~void action(customer cust, int perp)
+Desc: randomises who the victim is for the rob & throw function. Calls the throw
+      rob functions
+Pre: none
+Post: the victim has either been stolen from or has had an item thrown at them
+
+~~ostream& operator <<(ostream& os, const Customer cust)~~
+Desc: displays the name of the customers, their money, and what items they have
+Pre: none
+Post: the name of the customers, their money, and their items have been outputed 
+      to the screen
+      
+~~int Customer::get_incline()~~
+Desc: returns the inclination of the customer
+Pre: none
+Post: returns the inclination of the customer
+
+~~void shelbyville()~~
+Desc: 
 
 */
 
