@@ -131,15 +131,11 @@ int Customer::get_incline()
 }
 
 ////////////////////////
-void shelbyville()
+void shelbyville(customer patrons)
 {
-   for(int i = 0; i < num_cust; i++)
-   {
-     int switcheroo = rand()%NUM_CUST;
-     customer temp = patrons[i];
-     patrons[i] = patrons[switcheroo];
-     patrons[switcheroo] = temp;
-   }
+   int temp = patrons[num_cust];
+   patrons[num_cust] = patrons[i];
+   patrons[i] = temp;
    num_cust--;
    return;
 }
