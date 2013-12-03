@@ -16,8 +16,9 @@ int main()
   Business Moes;
   Business Comics;
   Customer patrons[NUM_CUST];
+  int num_cust = NUM_CUST;
   patrons.set_names();
-  for(int i = 0; i <NUM_CUST; i++)
+  for(int i = 0; i <num_cust; i++)
   {
     if(patron[i].inclination == 0)
       Moes.addCustomer();
@@ -26,18 +27,18 @@ int main()
   }
   Moes.sell_stuff();
   Comics.sell_stuff();
-  for(int i = 0; i < NUM_CUST; i++)
+  for(int i = 0; i < num_cust; i++)
   {
     int switcheroo = rand()%NUM_CUST;
     customer temp = patrons[i];
     patrons[i] = patrons[switcheroo];
     patrons[switcheroo] = temp;
   }
-  for(int i = 0; i < NUM_CUST; i++)
+  for(int i = 0; i < num_cust; i++)
   {
     customer.action(patrons, i);
   }
-  for(int i = 0; i < NUM_CUST; i++)
+  for(int i = 0; i < num_cust; i++)
   {
     if(patron[i] > 90 || patron[i] < 10)
     {
