@@ -32,7 +32,10 @@ Post: If the customer was able to buy something it's happiness went up,
       if not, it went down
       
 ~~void throwItem(customer cust, int perp, int victim)~~
-Desc: 
+Desc: A random custromer throws an item at another customer if the customer is 
+      a different store
+Pre: 
+Post: 
 
 */
 
