@@ -42,7 +42,7 @@ int main()
   {
     if(patron[i] > 90 || patron[i] < 10)
     {
-      patron[i].Shelbyville();
+      patron[i].Shelbyville(patrons);
     }
   }
   return 0;
