@@ -65,6 +65,7 @@ class Customer
     void setMoney(const float cash){m_cash=cash; return;}
     void print();
     int get_incline();
+    void shelbyville();
 };
 
 #endif
