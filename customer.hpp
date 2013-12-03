@@ -134,8 +134,8 @@ int Customer::get_incline()
 void shelbyville(customer patrons)
 {
    int temp = patrons[num_cust];
-   patrons[num_cust] = patrons[i];
-   patrons[i] = temp;
+   patrons[num_cust] = *this;
+   *this = temp;
    num_cust--;
    return;
 }
