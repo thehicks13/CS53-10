@@ -16,28 +16,10 @@
 using namespace std;
 
 /*
-~~stock()~~
-DESC: "stocks" the business with items to sell
-PRE:  none
-POST: returns nothing, but sets values in m_merch equal to strings from a file
-~~print()~~
-DESC: prints business info. to the screen
-PRE:  none
-POST: returns nothing, but prints to the screen
-~~addCustomer()~~
-DESC: adds a customer to the business's list of them
-PRE:  none
-POST: returns nothing, but adds a customer to the array of customers
-~~make_a_sale()~~
-DESC: forcibly sells a random item from the store to someone for $40
-PRE:  none
-POST: returns nothing, but adds money to the business and takes it from a
-      customer
-      ~~getMoney()~~
-      DESC: makes the business's money accessible from outside the class
-      PRE:  none
-      POST: returns the value of m_money
-      */
+~~void Business::stock()~~
+Desc: 
+
+*/
   class Business
   {
     private:
