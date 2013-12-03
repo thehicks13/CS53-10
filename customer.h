@@ -62,6 +62,18 @@ Post: returns the inclination of the customer
 
 ~~void shelbyville()~~
 Desc: 
+Pre:
+Post:
+
+~~void shuffle[Customer peoples]~~
+Desc:
+Pre:
+Post:
+
+~~void storeHappiness[Custoemr peoples]~~
+Desc:
+Pre:
+Post:
 
 */
 
@@ -80,6 +92,7 @@ class Customer
     short m_numPurch;
     int m_happiness;
     bool m_inclination;
+    
   public:
     Customer();
     void set_name(Customer peoples);
@@ -95,6 +108,8 @@ class Customer
     void print();
     int get_incline();
     void shelbyville();
+    void shuffle[Customer peoples];
+    void storeHappiness[Customer peoples];
 };
 
 #endif
