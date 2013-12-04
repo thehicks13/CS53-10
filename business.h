@@ -22,22 +22,24 @@ Pre: businesses must have a txt file of their items
 Pozt: The two businesses now have set items
 
 ~~void print()~~
-Desc: 
+Desc: prints the items each business has for sale to the screen. 
+      Also prints to the screen who is in each store
+Pre: the array of customers must be set 
+Post: none
+
+~~void addCustomer(Customer person)~~
+Desc: Adds a person to the array of customers
 Pre: 
 Post:
 
-~~void addCustomer(Customer person)~~
-Desc: 
-Pre:
-Post:
-
 ~~void sell_stuff()~~
-Desc:
-Pre:
-Post:
+Desc: Calls the customer's buy_something function 
+      and tries to sell an item to a customer.
+Pre: a customer must be set
+Post: Sells an item to customer if they had enough funds
 
 ~~void customer_leave(Customer people, const int num_cust)~~
-Desc:
+Desc: 
 Pre:
 Post:
 
