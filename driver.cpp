@@ -53,6 +53,13 @@ int main()
       }
     }
     cycles++;
+    cout<<"Customers:"<<endl;
+    for(int i = o; i < NUM_CUST; i++)
+    {
+      cout<<patrons[i]<<" with purchases:"<<endl;
+      for(int k = 0; k < patrons[i].m_numPurch; k++)
+        cout<<patrons[i].m_purchases[k]<<endl;
+    }
   }while(num_cust >= 1 || cycles = 20);
   for(int i = 0; i < NUM_CUST; i++)
   {
