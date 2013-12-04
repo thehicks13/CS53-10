@@ -31,7 +31,7 @@ Customer::void set_names()
 ////////////////////////
 
 template <typename T>
-bool Customer::buy_something(const T& Corp)
+bool Customer::buy_something(const T& Corp, int product)
 {
   bool pSuccess=false;
   int chancetoPurchase;
@@ -42,7 +42,6 @@ bool Customer::buy_something(const T& Corp)
     chancetoPurchase = rand()%2;
     if(chancetoPurchase == 1)
     { 
-      product = rand()%Corp.m_numMerch;
       if(m_cash >= m_merch.price[product])
       {
          m_purchases[cust.m_numPurch]=Corp.m_merch[product];
