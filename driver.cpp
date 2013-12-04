@@ -21,6 +21,8 @@ int main()
   int Moes_happiness = 0;
   int Comics_happiness = 0;
   patrons.set_names();
+  for(int i = o; i < NUM_CUST; i++)
+    cout<<patrons[i];
   do{
     for(int i = 0; i <num_cust; i++)
     {
