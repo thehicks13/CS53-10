@@ -10,10 +10,20 @@
 
 void Business::stock()
 {
-  char merch[]="merchandise.txt";
-  ifstream fin;
-  fin.open(merch);
-  int i=0;
+  if(m_bName == 'Comics')
+  {
+    product merch[]="ComicItems.txt";
+    ifstream fin;
+    fin.open("ComicItems.txt");
+    int i=0;
+  }
+  if(m_bName == 'Moes')
+  {
+    product merch[] =  "MoesItems.txt";
+    ifstream fin;
+    fin.open("MoesItems.txt");
+    int i=0;
+  }
   while(!fin.eof())
   {
     m_numMerch++;
