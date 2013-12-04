@@ -67,8 +67,13 @@ void Business::sell_stuff()
 {
   for(int i = 0; i < m_numPeople; i++)
   {
-    m_people[i].buy_something(*this); 
-    m_money += m_merch[product];
+    int product;
+    bool goodPurchase;
+    
+    product = rand()%Corp.m_numMerch;
+    goodPurchase = m_people[i].buy_something(*this, product); 
+    if(goodPurchase ==  true)
+      m_money += m_merch[product].price;
   }
   return;
 }
