@@ -16,9 +16,36 @@
 using namespace std;
 
 /*
-~~void Business::stock()~~
+~~void stock()~~
 Desc: Brings the items from the business in
+Pre: businesses must have a txt file of their items
+Pozt: The two businesses now have set items
+
+~~void print()~~
+Desc: 
 Pre: 
+Post:
+
+~~void addCustomer(Customer person)~~
+Desc: 
+Pre:
+Post:
+
+~~void sell_stuff()~~
+Desc:
+Pre:
+Post:
+
+~~void customer_leave(Customer people, const int num_cust)~~
+Desc:
+Pre:
+Post:
+
+~~void getMoney(){return m_money}~~
+Desc:
+Pre:
+Post:
+
 
 */
   class Business
@@ -33,13 +60,13 @@ Pre:
     public:
       void stock();
       Business(string &name, const float money):m_bName(name),
-      m_money(money),m_numPeople(0){stock();};
+      m_money(money),m_numPeople(0){stock()};
       Business():m_bName(""),m_money(0),m_numMerch(0),m_numPeople(0){};
       void print();
       void addCustomer(Customer person);
       void sell_stuff();
       void customers_leave(Customer people, const int num_cust);
-      float getMoney(){return m_money;}
+      float getMoney(){return m_money};
   };
 
 #endif
