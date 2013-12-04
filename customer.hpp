@@ -42,14 +42,16 @@ bool Customer::buy_something(const T& Corp)
     chancetoPurchase = rand()%2;
     if(chancetoPurchase == 1)
     { 
-      if(m_cash >= aaaaaaaaaaaaaaaaaaaaaaaaa)
+      product = rand()%Corp.m_numMerch;
+      if(m_cash >= m_merch.price[product])
       {
-         product = rand()%Corp.m_numMerch;
          m_purchases[cust.m_numPurch]=Corp.m_merch[product];
          cust.m_cash -= aaaaaaaaaaaaaaaaaaa;
          m_happiness += 25;
          m_numPurch++;
          pSuccess=true;
+         cout<<cust.m_cname<<" bought "<<cust.m_purchases[cust.m_numPurch]
+             <<"for $"<<m_merch.price[product];
       }
     }
   }
