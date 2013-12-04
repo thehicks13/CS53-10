@@ -69,5 +69,19 @@ int main()
     else if(store = 1)
       Comics_happiness += patons[i].m_happiness;
   }
+  if(Moes_happiness > Comics_happiness)
+  {
+    cout<<Moes.bname<<" is the best business in Springfield,"<<
+    "having customers with a total happiness of "<<Moes_happiness<<
+    "Moes could be the next Mcdonalds in the corperate world.";
+  }
+  else if(Comics_happiness)
+  {
+    cout<<Comics.bname<<" is the best business in Springfield,"<<
+    "having customers with a total happiness of "<<Comics_happiness<<
+    "Comics could be the next Marvel in the corperate world.";
+  }
+  else
+    cout<<"Both of these businesses suck equally and will never amount to anything.";
   return 0;
 }
