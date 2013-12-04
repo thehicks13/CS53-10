@@ -27,7 +27,8 @@ void Business::stock()
   while(!fin.eof())
   {
     m_numMerch++;
-    getline(fin,m_merch[i],'\n');
+    fin<<m_merch[i].price;
+    getline(fin,m_merch.name[i],'\n');
     i++;
   }
   fin.close();
