@@ -46,7 +46,7 @@ bool Customer::buy_something(const T& Corp)
       if(m_cash >= m_merch.price[product])
       {
          m_purchases[cust.m_numPurch]=Corp.m_merch[product];
-         cust.m_cash -= , m_merch.price[product];
+         cust.m_cash -= m_merch.price[product];
          m_happiness += 25;
          m_numPurch++;
          pSuccess=true;
