@@ -17,7 +17,8 @@ using namespace std;
 
 /*
 ~~void Business::stock()~~
-Desc: 
+Desc: Brings the items from the business in
+Pre: 
 
 */
   class Business
