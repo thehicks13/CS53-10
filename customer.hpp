@@ -65,6 +65,8 @@ void throwItem(customer cust, int perp, int victim)
 {
    if(cust[perp].numPurch > 0 && cust[perp].inclination != cust[victim].inclination)
    {
+     cout<<cust[perp].m_cname<<" throws a "<<cust[perp].m_purchases[m_numPurch]
+         <<" at "<<cust[victim].m_cname;
      cust[perp].m_purchases[m_numPurch] = " ";
      cust[perp].m_numPurch --;
      cust[victim].happiness -= 20;
@@ -138,6 +140,7 @@ void shelbyville(customer patrons)
    int temp = patrons[num_cust];
    patrons[num_cust] = *this;
    *this = temp;
+   cout<<temp.m_cname<<" has left for shelbyville.";
    num_cust--;
    return;
 }
