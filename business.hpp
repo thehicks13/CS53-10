@@ -10,7 +10,7 @@
 
 void Business::stock()
 {
-  char merch[]="merchandise.dat";
+  char merch[]="merchandise.txt";
   ifstream fin;
   fin.open(merch);
   int i=0;
